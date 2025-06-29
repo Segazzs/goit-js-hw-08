@@ -85,7 +85,8 @@ gallery.addEventListener("click", (event) => {
   const instance = basicLightbox.create(
     `
     <img class="gallery-image" src="${event.target.dataset.source}">
-  `
+  `,
+    { closable: true }
   );
 
   instance.show();
